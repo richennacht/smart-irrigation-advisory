@@ -94,3 +94,10 @@ footer { background: #dce7da; border-color: #cbd9ca; }
 .weather-summary p { margin: 6px 0 0; }
 @media (max-width: 1000px) { .top { height: auto; padding-top: 16px; flex-wrap: wrap; } .top nav { order: 2; width: 100%; overflow-x: auto; } .top nav a { padding: 14px 0; white-space: nowrap; } }
 @media (max-width: 760px) { .resource-grid, .crop-summary { grid-template-columns: 1fr; } .crop-row { flex-wrap: wrap; } .crop-main { flex-basis: calc(100% - 70px); } .crop-meta { min-width: 100px; } .table-heading { align-items: flex-start; flex-direction: column; } }
+/* Farm imagery */
+.hero { background: linear-gradient(90deg, rgba(20, 57, 41, .97) 0%, rgba(20, 57, 41, .9) 35%, rgba(20, 57, 41, .5) 68%, rgba(20, 57, 41, .22) 100%), url('/images/field-irrigation.webp') center 56% / cover no-repeat; }
+.hero-art { display: none; }
+.crop-feature { display: grid; grid-template-columns: minmax(0, 1fr) 235px; margin: 28px 0 0; overflow: hidden; border: 1px solid #cddccd; border-radius: 9px; background: #dce9d9; }
+.crop-feature img { width: 100%; height: 220px; object-fit: cover; object-position: center 48%; display: block; }
+.crop-feature figcaption { display: flex; align-items: center; padding: 24px; color: #526b59; font-size: 13px; line-height: 1.6; }
+@media(max-width:760px) { .hero { background-position: center, 62% center; } .crop-feature { grid-template-columns: 1fr; } .crop-feature img { height: 180px; } .crop-feature figcaption { padding: 14px 18px; } }
