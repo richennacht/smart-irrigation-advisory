@@ -101,3 +101,15 @@ footer { background: #dce7da; border-color: #cbd9ca; }
 .crop-feature img { width: 100%; height: 220px; object-fit: cover; object-position: center 48%; display: block; }
 .crop-feature figcaption { display: flex; align-items: center; padding: 24px; color: #526b59; font-size: 13px; line-height: 1.6; }
 @media(max-width:760px) { .hero { background-position: center, 62% center; } .crop-feature { grid-template-columns: 1fr; } .crop-feature img { height: 180px; } .crop-feature figcaption { padding: 14px 18px; } }
+/* Illustrative crop and soil photographs */
+.type-image { display: inline-block; width: 64px; height: 64px; flex: 0 0 64px; border-radius: 8px; background-size: 200% 200%; background-repeat: no-repeat; background-color: #dbe9d7; }
+.type-image-fallback { display: inline-flex; align-items: center; justify-content: center; color: #4d7657; background: #dbe9d7; font-size: 24px; }
+.plot-visuals { display: flex; align-items: center; justify-content: space-between; margin: -3px 0 18px; }
+.plot-crop-image { width: 76px; height: 76px; flex-basis: 76px; }
+.soil-preview { display: flex; align-items: center; gap: 8px; color: #607866; font-size: 11px; }
+.plot-soil-image { width: 40px; height: 40px; flex-basis: 40px; border-radius: 50%; }
+.detail-images { display: flex; gap: 24px; padding: 6px 0 20px; }
+.detail-images > div { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; color: #526b59; }
+.detail-images .type-image { width: 56px; height: 56px; flex-basis: 56px; }
+.crop-type-image { width: 58px; height: 58px; flex-basis: 58px; }
+@media(max-width:760px) { .crop-main { flex-basis: calc(100% - 80px); } .detail-images { flex-wrap: wrap; } }
